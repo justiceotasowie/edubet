@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red; 
+}
+header, main, nav, footer{
+    max-width: 600px;
+    padding: 0.5rem 2rem;
+    margin: 0 auto;
+}
+
+.navigation{
+    display:none;
+
+}
+.navigation.show{
+    display: flex;
+    background-color: rgb(121, 185, 0);
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.navigation a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: .1rem;
+    color: black;
+
+}
+
+
+
+.hamburger::before{
+   content: "\2630";
+  font-size: 1rem;
+}
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 2rem;
+    border-bottom: 2px solid rgb(153, 34, 34);
+    
+}
+
+h1{
+    color: rgb(153, 34, 34);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header button{
+    padding: .5rem;
+    color: rgb(2, 27, 2);
+    font-size: 1rem;
+    background-color: #ddd;
+    border: none;
+
+}
+
+header button:hover{
+    color: blue;
+}
+
+
+
