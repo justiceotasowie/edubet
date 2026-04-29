@@ -74,5 +74,27 @@ header button:hover{
     color: blue;
 }
 
+/* main */
+
+#divContainer {
+    display: flex;
+    overflow-x: hidden; /* hide scrollbar */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+#divContainer section {
+    flex: 0 0 100%; /* each section = full width */
+    scroll-snap-align: start;
+    width: 80%;
+    max-height: 200px;
+    display: grid;
+    place-items: center; /* center the text */
+    font-size: 2rem;
+}
+
+
+
 
 

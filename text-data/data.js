@@ -1,0 +1,2 @@
+export const texts = [ "do you want to excel in academics", "here is a good place to start to study", "play and learn", "time counts start now", "be responsible for your learning", "learning never ends!"
+]   
