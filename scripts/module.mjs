@@ -49,3 +49,5 @@ function showNextSlide() {
 refillPlaylist();
 showNextSlide(); // show first one immediately
 setInterval(showNextSlide, 5000);
+
+
