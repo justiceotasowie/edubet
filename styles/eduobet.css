@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red; 
+  
 }
 header, main, nav, footer{
     max-width: 600px;
@@ -82,16 +82,28 @@ header button:hover{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     width: 100%;
+     gap: 2.5rem;
+
 }
 
 #divContainer section {
-    flex: 0 0 100%; /* each section = full width */
+    flex: 0 0 30%; /* each section = full width */
     scroll-snap-align: start;
-    width: 80%;
+    width: 30%;
     max-height: 200px;
     display: grid;
     place-items: center; /* center the text */
     font-size: 2rem;
+    padding: 3rem;
+}
+main p{
+    font-size: 1.5rem;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
 }
 
 

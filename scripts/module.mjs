@@ -51,3 +51,47 @@ showNextSlide(); // show first one immediately
 setInterval(showNextSlide, 5000);
 
 
+// import { texts } from "/text-data/data.js";
+
+// const divContainer = document.querySelector("#divContainer");
+
+// // 1. Render all sections
+// texts.forEach(text => {
+//     const section = document.createElement("section");
+//     section.innerHTML = text;
+//     divContainer.appendChild(section);
+// });
+
+// // 2. Auto swipe logic
+// const sections = divContainer.querySelectorAll("section");
+// let currentIndex = 0;
+// const total = sections.length;
+// const swipeInterval = 4000; // 4 seconds
+
+// function autoSwipe() {
+//     currentIndex = (currentIndex + 1) % total; // loop back to 0
+
+//     // Scroll to the section. scrollIntoView works with your scroll-snap setup
+//     sections[currentIndex].scrollIntoView({
+//         behavior: "smooth",
+//         inline: "start",
+//         block: "nearest"
+//     });
+// }
+
+// let intervalId = setInterval(autoSwipe, swipeInterval);
+
+// // 3. Pause on hover/touch so it doesn't fight the user
+// divContainer.addEventListener("pointerdown", () => clearInterval(intervalId));
+// divContainer.addEventListener("pointerup", () => {
+//     intervalId = setInterval(autoSwipe, swipeInterval);
+// });
+
+// // Optional: pause when tab is hidden
+// document.addEventListener("visibilitychange", () => {
+//     if (document.hidden) {
+//         clearInterval(intervalId);
+//     } else {
+//         intervalId = setInterval(autoSwipe, swipeInterval);
+//     }
+// });
